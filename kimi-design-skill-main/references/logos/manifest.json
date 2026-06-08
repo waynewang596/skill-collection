@@ -1,0 +1,97 @@
+[
+  {
+    "name": "KimiLogo",
+    "file": "KimiLogo.svg",
+    "source_file": "/Users/moonshot/Downloads/logo.svg",
+    "type": "symbol",
+    "has_text": false,
+    "color_mode": "fixed",
+    "intrinsic_size": {
+      "width": 128,
+      "height": 128
+    },
+    "preferred_height": 32,
+    "use_for": [
+      "Kimi brand mark",
+      "compact logo slot",
+      "app icon style brand mark",
+      "avatar-like brand surface"
+    ],
+    "avoid_for": [
+      "header logo placeholder when text logo is expected",
+      "generic UI icon",
+      "toolbar action icon",
+      "inline text icon"
+    ],
+    "notes": "Pure logo without text. Use when the product surface needs a compact Kimi brand mark rather than a wordmark."
+  },
+  {
+    "name": "KimiLogoText",
+    "file": "KimiLogoText.svg",
+    "source_file": "/Users/moonshot/Downloads/LogoText.svg",
+    "type": "wordmark",
+    "has_text": true,
+    "color_mode": "currentColor",
+    "theme_tokens": {
+      "light": {
+        "color": "color.labels.primary.light.default"
+      },
+      "dark": {
+        "color": "color.labels.primary.dark.default"
+      }
+    },
+    "intrinsic_size": {
+      "width": 77,
+      "height": 26
+    },
+    "preferred_height": 26,
+    "use_for": [
+      "header logo placeholder",
+      "primary Kimi wordmark",
+      "brand identity in navigation"
+    ],
+    "avoid_for": [
+      "icon-only button",
+      "toolbar action icon",
+      "texture concept icon",
+      "sub-brand lockup"
+    ],
+    "notes": "Recommended for header logo placeholders when the surface should show the Kimi text logo. Use as an inline SVG/component so currentColor can follow light and dark theme tokens."
+  },
+  {
+    "name": "KimiLogoSub",
+    "file": "KimiLogoSub.svg",
+    "source_file": "/Users/moonshot/Downloads/Logo+sub.svg",
+    "type": "sub_brand_lockup",
+    "has_text": true,
+    "color_mode": "themeVariables",
+    "theme_tokens": {
+      "light": {
+        "--kimi-logo-sub-bg": "color.labels.primary.light.default",
+        "--kimi-logo-sub-fg": "color.background.primary.light.default"
+      },
+      "dark": {
+        "--kimi-logo-sub-bg": "color.labels.primary.dark.default",
+        "--kimi-logo-sub-fg": "color.background.primary.dark.default"
+      }
+    },
+    "intrinsic_size": {
+      "width": 66,
+      "height": 26
+    },
+    "preferred_height": 26,
+    "use_for": [
+      "header logo placeholder with a specific sub-brand",
+      "Kimi sub-brand lockup",
+      "brand identity in navigation for sub-brand products"
+    ],
+    "avoid_for": [
+      "generic Kimi-only header",
+      "icon-only button",
+      "toolbar action icon",
+      "texture concept icon",
+      "standalone decorative logo"
+    ],
+    "notes": "Use only with a concrete attached sub-brand context. Do not substitute it for the default KimiLogoText wordmark. Use as an inline SVG/component and provide --kimi-logo-sub-bg and --kimi-logo-sub-fg from theme tokens."
+  }
+]
